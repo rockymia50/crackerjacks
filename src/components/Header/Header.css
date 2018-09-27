@@ -1,0 +1,14 @@
+.header {
+  background-color: blue;
+  color: white;
+  min-height: 25px;
+  padding: 10px 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 4rem;
+}

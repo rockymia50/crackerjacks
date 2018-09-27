@@ -10,5 +10,9 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image:url();
+    background-color: brown;
+    background-image:url("/Users/rogermcintosh/crackerjacks/public/assets/images/Natspark.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
   }
