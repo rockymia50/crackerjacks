@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "/Users/rogermcintosh/crackerjacks/src/App.js";
+import App from "./App.js";
+import "./index.css";
+
 
 ReactDOM.render(<App />, document.getElementById("root"));
