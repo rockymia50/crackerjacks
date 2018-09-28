@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'reactstrap';
+import NumericInput from 'react-numeric-input';
 import './Header.css';
 
 
@@ -18,7 +19,9 @@ const Header = props => {
       <label>First Base</label>
       <input onChange={props.handleLengthChange} type="radio" name="length" value="1st Base"/><br/>
       <label>Number of Outs</label>
-      <input onChange={props.handleParagraphChange} type="text" pattern="" name="paragraphs" placeholder="3" min="1" max="5"/>
+      {/* <input onChange={props.handleParagraphChange} type="text" pattern="" name="paragraphs" placeholder="3" min="1" max="5"/> */}
+      {/* <NumericInput name="paragraphs" valueasnumber={props.handleParagraphChange} min={1} max={7} /> */}
+      <NumericInput  className="form-control"  placeholder='3' onChange={props.handleParagraphChange} min={1} max={7}/>
       <Button color="warning" type="submit">Swing</Button>
     </form>
 

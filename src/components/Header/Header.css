@@ -12,3 +12,11 @@
   margin-bottom: 30px;
   font-size: 4rem;
 }
+
+.form-control {
+  width: 4%;
+  text-align: center;
+  margin-left: 48%;
+  margin-bottom: 1%;
+
+}

@@ -4,11 +4,12 @@ import { Container,Row, Col,Jumbotron } from 'reactstrap';
 
 
 
+
 const Lorem = require('react-lorem-component');
 
 class App extends Component {
     state = {
-      paragraphs: 3,
+      numericInput:'3',
       length: "3rd Base"
       
     };
@@ -19,12 +20,10 @@ class App extends Component {
         });
     }
 
-    handleParagraphChange = (event) => {
-        console.log(event);
-        this.setState({
-            paragraphs: event.target.value
-            
-        });
+    handleParagraphChange = (value) => {
+            this.setState({
+            numericInput: value
+            });
     }
 
     generateLorem = (event) => {
