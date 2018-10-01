@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Header from "./components/Header";
+import Header from './components/Header';
 import { Container,Row, Col,Jumbotron } from 'reactstrap';
+import Words from '/Users/rogermcintosh/crackerjacks/src/components/Words/Words.js';
 
 
 
@@ -29,8 +30,57 @@ class App extends Component {
     generateLorem = (event) => {
         event.preventDefault();
         console.log(this.state);
+        console.log(this.generateLorem);
     }
 
+      
+    //     getDefaultProps: function() {
+    //       return {
+    //         mode:     'paragraphs',
+    //         format:   'html',
+    //         count:    5,
+    //         seed:     0,
+    //         ordered:  false
+    //       };
+    //     },
+      
+    //     render: function() {
+    //       var props = extend({}, this.props, {
+    //         units:  'paragraphs',
+    //         Lorem: {words}
+    //       });
+      
+    //       random.seed(props.seed);
+      
+    //       var html = loremIpsum(props);
+    //       var wrapper;
+      
+        
+      
+    //       // own props
+    //       delete props.mode;
+    //       delete props.ordered;
+    //       delete props.random;
+      
+    //       // props passed to seedable-random
+    //       delete props.seed;
+      
+    //       // props passed to lorem-ipsum
+    //       delete props.count;
+    //       delete props.units;
+    //       delete props.sentenceLowerBound;
+    //       delete props.sentenceUpperBound;
+    //       delete props.paragraphLowerBound;
+    //       delete props.paragraphUpperBound;
+    //       delete props.format;
+    //       delete props.words;
+    //       delete props.suffix;
+      
+    //       return wrapper(props);
+    //     }
+    //   });
+      
+    //   module.exports = Lorem;  
 
     render() {
         return (
@@ -49,7 +99,7 @@ class App extends Component {
                         <Row>
                             <Col>
                                 <h1>Lorem Ipsum</h1>
-                                <Lorem words={['ball', 'cap', 'bat', 'batter', 'bunt','coach','curve','HammerinHank','Old Pete','Smokey','Dubble Bubble','Sunflower Seeds','Here Batter Batter','Your Out','Sparky','Peanuts','Cracker Jacks','Hank Aaron', 'Max Scherzer', 'Justin Verlander', 'Houston Astros', 'New York Yankees', 'Boston Red Soxs', 'Chicago Cubs','Old Aches and Pains','Babe Ruth', 'Whitey', 'Mr. Cub', 'dugout', 'fence', 'field', 'umpire', 'first baseman', 'foul', 'foul line', 'splitter', 'glove', 'minor league', 'pitch', 'pitcher', 'right fielder', 'run', 'runner', 'RBI', 'steal', 'basemans', 'World Series', 'throw','walk','lorem', 'ipsum', 'dolor', 'stars', 'stripes' ]}/>   
+                                <Words/>
                             </Col>
                         </Row>
                     </Container>

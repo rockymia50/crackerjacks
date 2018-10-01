@@ -7,7 +7,9 @@ const mainContent = (props) => {
   return (
     <div>
       <Jumbotron className="jumbotron">
-        
+        <div>
+           <span onClick={props.generateLorem} />
+        </div>             
       </Jumbotron>
     </div>
   );
