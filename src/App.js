@@ -44,7 +44,7 @@ class App extends Component {
                     />
                 </div>
             
-                <Jumbotron>
+                <Jumbotron >
                     <Container>
                         <Row>
                             <Col>

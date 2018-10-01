@@ -1,7 +1,7 @@
 .header {
-  background-color: blue;
+  background-color: red;
   color: white;
-  min-height: 25px;
+  font-weight: bolder;
   padding: 10px 10px;
   padding-bottom: 10px;
   text-align: center;
@@ -9,14 +9,18 @@
 
 .header h1 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   font-size: 4rem;
 }
 
 .form-control {
-  width: 4%;
   text-align: center;
-  margin-left: 48%;
+  margin-bottom: 1%;
+}
+
+#root > div > div:nth-child(1) > header > form > span {
+  width:6%;
+  margin-left:47%;
   margin-bottom: 1%;
 
 }

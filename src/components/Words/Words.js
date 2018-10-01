@@ -4,8 +4,6 @@ import "./Words.css";
 
  export class Words extends React.Component{
     render(){
-     
-        console.log(this.props);
         return(
             <div>
                 <p>I am a new component</p>

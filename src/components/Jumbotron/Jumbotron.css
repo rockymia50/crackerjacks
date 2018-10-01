@@ -1,0 +1,9 @@
+.jumbotron {
+    background-color: green;
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
