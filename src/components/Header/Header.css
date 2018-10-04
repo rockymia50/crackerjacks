@@ -18,9 +18,14 @@
   margin-bottom: 1%;
 }
 
-#root > div > div:nth-child(1) > header > form > span {
+#root > div > div:nth-child(1) > header > form{
+  margin-left:26%;
+  margin-bottom: 1%;
+}
+
+/* #root > div > div:nth-child(1) > header > form > span {
   width:6%;
   margin-left:47%;
   margin-bottom: 1%;
 
-}
+} */

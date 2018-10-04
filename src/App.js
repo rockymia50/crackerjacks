@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 import Header from './components/Header';
-import { Container,Row, Col,Jumbotron } from 'reactstrap';
+import MainContent from '/Users/rogermcintosh/crackerjacks/src/components/MainContent/MainContent.js';
 import Words from '/Users/rogermcintosh/crackerjacks/src/components/Words/Words.js';
+import data from './data.json'
+// const Lorem = require('react-lorem-component');
 
-
-
-
-const Lorem = require('react-lorem-component');
 
 class App extends Component {
     state = {
       numericInput:'3',
-      length: "3rd Base"
+      length: "3rd Base",
+      data
       
     };
 
@@ -27,11 +26,19 @@ class App extends Component {
             });
     }
 
-    generateLorem = (event) => {
+    generateLorem = (event,value) => {
+        // const data = 
         event.preventDefault();
+        this.setState({data});
         console.log(this.state);
-        console.log(this.generateLorem);
-    }
+        
+        };
+            
+       
+        // setupGame: function() {
+        //     // Here we pick a random word.
+        //     var objKeys = Object.keys(this.wordsToPick);
+        //     this.wordInPlay = objKeys[Math.floor(Math.random() * objKeys.length)];
 
       
     //     getDefaultProps: function() {
@@ -86,6 +93,7 @@ class App extends Component {
         return (
             <div>
                 <div>
+
                     <Header 
                         handleLengthChange={this.handleLengthChange} 
                         handleParagraphChange={this.handleParagraphChange}
@@ -93,17 +101,12 @@ class App extends Component {
                         generateLorem={this.generateLorem}
                     />
                 </div>
-            
-                <Jumbotron >
-                    <Container>
-                        <Row>
-                            <Col>
-                                <h1>Lorem Ipsum</h1>
-                                <Words/>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Jumbotron>
+                <MainContent
+                numericInput={this.state.numericInput}
+                length={this.state.length}
+                words={data}
+                />
+                
             </div>
         );
       }

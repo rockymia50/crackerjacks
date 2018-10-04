@@ -1,18 +1,18 @@
 
-.container {
+.words {
     display: flex;
     min-height: 80%;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    width: 90%;
+    width: 750%;
     margin: 0 auto;
     background-color: blue;
   }
   
   @media (min-width: 1100px) {
-    .container {
+    .words {
       padding-left: 100px;
       padding-right: 100px;
       width: 1100px;

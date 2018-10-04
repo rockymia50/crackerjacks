@@ -4,12 +4,24 @@ import "./Words.css";
 
 const Lorem = require('react-lorem-component');
 
+const handleLength = (base) => {
+    switch(base) {
+        case '1st Base':
+            return 3;
+        case '2nd Base':
+            return 5;
+        case '3rd Base':
+            return 7;  
+            default:
+            return 3  
+    }
 
+}
 
 const Words = props => {
         return(
-            <div>
-                <Lorem words={['ball', 'cap', 'bat', 'batter', 'bunt','coach','curve','HammerinHank','Old Pete','Smokey','Dubble Bubble','Sunflower Seeds','Here Batter Batter','Your Out','Sparky','Peanuts','Cracker Jacks','Hank Aaron', 'Max Scherzer', 'Justin Verlander', 'Houston Astros', 'New York Yankees', 'Boston Red Soxs', 'Chicago Cubs','Old Aches and Pains','Babe Ruth', 'Whitey', 'Mr. Cub', 'dugout', 'fence', 'field', 'umpire', 'first baseman', 'foul', 'foul line', 'splitter', 'glove', 'minor league', 'pitch', 'pitcher', 'right fielder', 'run', 'runner', 'RBI', 'steal', 'basemans', 'World Series', 'throw','walk','lorem', 'ipsum', 'dolor', 'stars', 'stripes' ]}/>   
+            <div className="words">
+                <Lorem words={props.words} count={props.numericInput} paragraphUpperBound={handleLength(props.length)}/>   
             </div>
         );
     }
